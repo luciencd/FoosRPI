@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+html body div#content div#innerContent div#liveScores{
+	background-color: green;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	-moz-border-radius-topleft: 6px;
+	-moz-border-radius-topright: 6px;
+	-webkit-border-top-left-radius: 6px;
+	-webkit-border-top-right-radius: 6px;
+	color: white;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+html body div#content div#innerContent div#liveScores div#innerScores{
+	display: inline-block;
+}
+
+html body div#content div#innerContent div#myStats div#eloRating{
+	width: 30%;
+	float: left;
+	font-size: 80px;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	line-height: 75px;
+}
+
+html body div#content div#innerContent div#myStats div#eloRating span{
+	font-size: 10px;
+	margin-top:-40px;
+	display: block;
+}
+
+html body div#content div#innerContent div#myStats div#gameStats{
+	width: 70%;
+	float: left;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	height: 80px;
+}
+
+html body div#content div#innerContent div#myStats div#gameStats div{
+	float: left;
+	width: 25%;
+}
+
+html body div#content div#innerContent div#myStats div#gameStats span{
+	font-size: 40px;
+}
+
+html body div#content div#innerContent div#leaderboards{
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+html body div#content div#innerContent div#leaderboards div#headRow{
+	background-color: rgb(120, 120, 120)!important;
+	color: white;
+}
+
+html body div#content div#innerContent div#leaderboards div#headRow div{
+	white-space: normal!important;
+}
+
+html body div#content div#innerContent div#leaderboards div.row{
+	padding-top: 6px;
+	padding-bottom: 6px;
+	background-color: rgb(220, 220, 220);
+	cursor: pointer;
+}
+
+html body div#content div#innerContent div#leaderboards div.row:hover{
+	background-color: rgb(180, 180, 180);
+}
+
+html body div#content div#innerContent div#leaderboards div.row div{
+	float: left;
+	padding-left: 1%;
+	padding-right: 1%;
+	line-height: 16px;
+	white-space: nowrap;
+}
+
+html body div#content div#innerContent div#myGames{
+	text-align: center;
+}
+
+html body div#content div#innerContent div#myGames h1{
+	padding-bottom: 20px;
+}
+
+html body div#content div#innerContent div#myGames div.row{
+	padding-top: 6px;
+	padding-bottom: 6px;
+	text-align: center;
+	background-color: rgb(220, 220, 220);
+	
+}
+
+html body div#content div#innerContent div#myGames div.row:hover{
+	background-color: rgb(180, 180, 180);
+	cursor: pointer;
+}
+
+html body div#content div#innerContent div#myGames div.row div{
+	width: 20%;
+	float: left;
+}

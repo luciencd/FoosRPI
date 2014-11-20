@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+html body div#content div#innerContent div.signInUp{
+	float: left;
+	width: 50%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-align: center;
+}
+
+html body div#content div#innerContent div.signInUp input{
+	margin-top: 8px;
+	margin-bottom: 8px;
+	background-color: rgb(240,240,240);
+	border: 1px solid gray;
+	padding: 4px;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	outline: none;
+}
