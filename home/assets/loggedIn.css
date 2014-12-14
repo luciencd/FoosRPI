@@ -53,33 +53,57 @@ html body div#content div#innerContent div#myStats div#gameStats span{
 	font-size: 40px;
 }
 
+<<<<<<< HEAD
 html body div#content div#innerContent div.leaderboards{
+=======
+html body div#content div#innerContent div#leaderboards{
+>>>>>>> 56aca3068d78b3c61546f57afb07e2a279b9cce0
 	text-align: center;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
 
+<<<<<<< HEAD
 html body div#content div#innerContent div.leaderboards div#headRow{
+=======
+html body div#content div#innerContent div#leaderboards div#headRow{
+>>>>>>> 56aca3068d78b3c61546f57afb07e2a279b9cce0
 	background-color: rgb(120, 120, 120)!important;
 	color: white;
 }
 
+<<<<<<< HEAD
 html body div#content div#innerContent div.leaderboards div#headRow div{
 	white-space: normal!important;
 }
 
 html body div#content div#innerContent div.leaderboards div.row{
+=======
+html body div#content div#innerContent div#leaderboards div#headRow div{
+	white-space: normal!important;
+}
+
+html body div#content div#innerContent div#leaderboards div.row{
+>>>>>>> 56aca3068d78b3c61546f57afb07e2a279b9cce0
 	padding-top: 6px;
 	padding-bottom: 6px;
 	background-color: rgb(220, 220, 220);
 	cursor: pointer;
 }
 
+<<<<<<< HEAD
 html body div#content div#innerContent div.leaderboards div.row:hover{
 	background-color: rgb(180, 180, 180);
 }
 
 html body div#content div#innerContent div.leaderboards div.row div{
+=======
+html body div#content div#innerContent div#leaderboards div.row:hover{
+	background-color: rgb(180, 180, 180);
+}
+
+html body div#content div#innerContent div#leaderboards div.row div{
+>>>>>>> 56aca3068d78b3c61546f57afb07e2a279b9cce0
 	float: left;
 	padding-left: 1%;
 	padding-right: 1%;

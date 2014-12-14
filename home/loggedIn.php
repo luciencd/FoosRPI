@@ -19,7 +19,11 @@
 	</div>
 	<div class="clear"></div>
 </div>
+<<<<<<< HEAD
 <div class="leaderboards">
+=======
+<div id="leaderboards">
+>>>>>>> 56aca3068d78b3c61546f57afb07e2a279b9cce0
 	<h1>Leaderboard</h1>
 	
 	<div class="row" id="headRow">
@@ -57,6 +61,7 @@
 	}
 	?>
 </div>
+<<<<<<< HEAD
 <div class="leaderboards">
 	<h1>Residence Leaderboard</h1>
 	
@@ -115,6 +120,8 @@
 	}
 	?>
 </div>
+=======
+>>>>>>> 56aca3068d78b3c61546f57afb07e2a279b9cce0
 <div id="myGames">
 	<h1>Your last 10 games</h1>
 	

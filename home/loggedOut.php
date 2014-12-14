@@ -23,6 +23,7 @@
 		<input type="text" name="rin" id="rin" value="RIN Number" /><br>
 		<input type="text" name="passwordFake" id="passwordFake" value="Password" /><input type="password" name="password" id="password" value="" style="display: none;" /><br>
 		<input type="text" name="password2Fake" id="password2Fake" value="Repeat Password" /><input type="password" name="password2" id="password2" value="" style="display: none;" /><br>
+<<<<<<< HEAD
 		<select name="dorm" style="width: 160px;">
 			<option value="na">-- Select Residence --</option>
 			<option value="Acacia">Acacia</option>
@@ -81,12 +82,18 @@
 			<option value="Warren Hall">Warren Hall</option>
 			<option value="Zeta Psi">Zeta Psi</option>
 		</select><br>
+=======
+>>>>>>> 56aca3068d78b3c61546f57afb07e2a279b9cce0
 		<input type="submit" name="submitButton" id="submitButton" value="Join" class="button" />
 		<div class="error"></div>
 	</form>
 </div>
 <div class="clear"></div>
+<<<<<<< HEAD
 <div class="leaderboards" style="padding-bottom: 0px!important;">
+=======
+<div id="leaderboards" style="padding-bottom: 0px!important;">
+>>>>>>> 56aca3068d78b3c61546f57afb07e2a279b9cce0
 	<h1>Leaderboard</h1>
 	
 	<div class="row" id="headRow">
@@ -123,6 +130,7 @@
 		++$i;
 	}
 	?>
+<<<<<<< HEAD
 </div>
 <div class="leaderboards" style="padding-bottom: 0px!important;">
 	<h1>Residence Leaderboard</h1>
@@ -181,4 +189,6 @@
 		++$i;
 	}
 	?>
+=======
+>>>>>>> 56aca3068d78b3c61546f57afb07e2a279b9cce0
 </div>
