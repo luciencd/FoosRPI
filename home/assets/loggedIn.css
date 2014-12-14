@@ -53,33 +53,33 @@ html body div#content div#innerContent div#myStats div#gameStats span{
 	font-size: 40px;
 }
 
-html body div#content div#innerContent div#leaderboards{
+html body div#content div#innerContent div.leaderboards{
 	text-align: center;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
 
-html body div#content div#innerContent div#leaderboards div#headRow{
+html body div#content div#innerContent div.leaderboards div#headRow{
 	background-color: rgb(120, 120, 120)!important;
 	color: white;
 }
 
-html body div#content div#innerContent div#leaderboards div#headRow div{
+html body div#content div#innerContent div.leaderboards div#headRow div{
 	white-space: normal!important;
 }
 
-html body div#content div#innerContent div#leaderboards div.row{
+html body div#content div#innerContent div.leaderboards div.row{
 	padding-top: 6px;
 	padding-bottom: 6px;
 	background-color: rgb(220, 220, 220);
 	cursor: pointer;
 }
 
-html body div#content div#innerContent div#leaderboards div.row:hover{
+html body div#content div#innerContent div.leaderboards div.row:hover{
 	background-color: rgb(180, 180, 180);
 }
 
-html body div#content div#innerContent div#leaderboards div.row div{
+html body div#content div#innerContent div.leaderboards div.row div{
 	float: left;
 	padding-left: 1%;
 	padding-right: 1%;
