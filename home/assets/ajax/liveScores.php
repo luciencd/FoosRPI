@@ -1,6 +1,6 @@
 <?php
 require('../../../global_assets/global_php/connect.php');
-$query = mysql_query('SELECT * FROM `games` WHERE `gameOver`="0" ORDER BY `timeStart` DESC'); //`gameOver`="0"
+$query = mysql_query('SELECT * FROM `games` WHERE `gameOver`="0" AND `player1`!="" AND `player2`!="" ORDER BY `timeStart` DESC'); //`gameOver`="0"
 if(mysql_num_rows($query)==0)
 	echo 'No games currently';
 else{

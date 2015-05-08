@@ -2,15 +2,19 @@
 
 require('../global_assets/global_php/connect.php');
 
-if($_POST[player]==1||$_POST[player]==2){
-	if(is_numeric($_POST[game])){
-		mysql_query('UPDATE `games` SET `score'.$_POST[player].'`=1+`score'.$_POST[player].'` WHERE `id`="'.mysql_real_escape_string($_POST[game]).'" AND `score'.$_POST[player].'`<10');
+$tableId = $_POST[tableId];
+$player = $_POST[player];
+
+if($player==1||$player==2){
+	if(in_array($tableId, array(1,2))){
+		echo 'UPDATE `games` SET `score'.$player.'`=1+`score'.$player.'` WHERE `gameOver`=0 AND `tableId`='.$tableId;
+		mysql_query('UPDATE `games` SET `score'.$player.'`=1+`score'.$player.'` WHERE `gameOver`=0 AND `tableId`='.$tableId);
 		if(mysql_affected_rows()==1){
 			// Now mark game as completed if 10 goals have been scored
-			mysql_query('UPDATE `games` SET `gameOver`="1", `timeOver`="'.time().'" WHERE `id`="'.mysql_real_escape_string($_POST[game]).'" AND `score'.$_POST[player].'`="10"');
+			mysql_query('UPDATE `games` SET `gameOver`="1", `timeOver`="'.time().'" WHERE `gameOver`=0 AND `tableId`='.$tableId.' AND `score'.$_POST[player].'`="10"');
 			if(mysql_affected_rows()==1){ // Update the ELOs of the players since the game is over
 				// Get the IDs of the players
-				$idsQuery = mysql_query('SELECT `player1`, `player2`, `score1`, `score2` FROM `games` WHERE `id`="'.$_POST[game].'" LIMIT 1');
+				$idsQuery = mysql_query('SELECT `player1`, `player2`, `score1`, `score2` FROM `games` ORDER BY `id` DESC LIMIT 1');
 				$idsResults = mysql_fetch_array($idsQuery);
 				$player1 = $idsResults[player1];
 				$player2 = $idsResults[player2];
@@ -58,10 +62,10 @@ if($_POST[player]==1||$_POST[player]==2){
 			}
 			echo 'success';
 		}else
-			echo 'error';
+			echo 'error3';
 	}else
-		echo 'error';
+		echo 'error2';
 }else
-	echo 'error';
+	echo 'error1';
 
 ?>

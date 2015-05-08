@@ -19,11 +19,7 @@
 	</div>
 	<div class="clear"></div>
 </div>
-<<<<<<< HEAD
 <div class="leaderboards">
-=======
-<div id="leaderboards">
->>>>>>> 56aca3068d78b3c61546f57afb07e2a279b9cce0
 	<h1>Leaderboard</h1>
 	
 	<div class="row" id="headRow">
@@ -61,7 +57,6 @@
 	}
 	?>
 </div>
-<<<<<<< HEAD
 <div class="leaderboards">
 	<h1>Residence Leaderboard</h1>
 	
@@ -120,8 +115,6 @@
 	}
 	?>
 </div>
-=======
->>>>>>> 56aca3068d78b3c61546f57afb07e2a279b9cce0
 <div id="myGames">
 	<h1>Your last 10 games</h1>
 	
@@ -146,7 +139,14 @@
 	
 	<?php
 	
-	$query = mysql_query('SELECT `player1`, `player2`, `score1`, `score2`, `timeStart`, `timeOver`, `gameOver` FROM `games` WHERE `player1`="'.mysql_real_escape_string($_COOKIE[userId]).'" OR `player2`="'.mysql_real_escape_string($_COOKIE[userId]).'" ORDER BY `timeOver` DESC, `timeStart` DESC LIMIT 10');
+	$query = mysql_query('SELECT `player1`, `player2`, `score1`, `score2`, `timeStart`, `timeOver`, `gameOver` FROM `games` WHERE (`player1`="'.mysql_real_escape_string($_COOKIE[userId]).'" AND `player2`!="") OR (`player2`="'.mysql_real_escape_string($_COOKIE[userId]).'" AND `player1`!="") ORDER BY `timeOver` DESC, `timeStart` DESC LIMIT 10');
+	if(mysql_num_rows($query)==0){
+		?>
+		<div class="row">
+			No games to show
+		</div>
+		<?php
+	}
 	while($row=mysql_fetch_array($query)){
 		$player1 = mysql_query('SELECT `name`, `rating` FROM `users` WHERE `rin`="'.$row[player1].'" LIMIT 1');
 		$player1 = mysql_fetch_array($player1);

@@ -40,6 +40,10 @@ $(function(){
 				if($(this).val()=="RIN Number")
 					$(this).val("");
 				break;
+			case 'phone':
+				if($(this).val()=="Phone Number")
+					$(this).val("");
+				break;
 			case 'passwordFake':
 				$(this).hide();
 				$(this).siblings("input#password").show().focus();
@@ -62,6 +66,10 @@ $(function(){
 			case 'rin':
 				if($(this).val()=="")
 					$(this).val("RIN Number");
+				break;
+			case 'phone':
+				if($(this).val()=="")
+					$(this).val("Phone Number");
 				break;
 			case 'password':
 				if($(this).val()==""){
